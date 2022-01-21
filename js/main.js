@@ -48,53 +48,44 @@
 
     // Header carousel
     $(".header-carousel").owlCarousel({
+        animateOut: 'slideOutLeft',
         autoplay: false,
         smartSpeed: 1500,
         items: 1,
         dots: true,
         loop: true,
         nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
+        navText: [
+            "<i class='fa fa-caret-left'></i>",
+            "<i class='fa fa-caret-right'></i>"
+          ],
     });
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    })
+
 
     // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: true,
+    $(".govlogo-carousel").owlCarousel({
         loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+        margin: 10,
+        nav: true,
+        navText: [
+          "<i class='fa fa-caret-left'></i>",
+          "<i class='fa fa-caret-right'></i>"
         ],
+        autoplay: true,
+        autoplayHoverPause: true,
         responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            }
+          0: {
+            items: 2
+          },
+          600: {
+            items: 3
+          },
+          700: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
         }
     });
 

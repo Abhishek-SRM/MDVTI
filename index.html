@@ -32,97 +32,182 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-body{
-  background:#f8f8f8c4;
-}
-p{
-  font-size: 17px;
-    line-height: 31px;
-    text-align: justify;
-    color: #000;
-}
-a{
-  font-family: 'Sofia Pro', sans-serif;
-}
-h1{
-  color:#150f49;
-}
-.footer{
-  background-color: #000;
-}
-.footer p{
-  color:#fff;
-  font-family: 'Sofia Pro', sans-serif;
-}
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "";
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 900;
-    margin-right: 10px;
-}
-.edu_tabs_label {
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    background: #dad5d5;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 176px;
-    right: 40px;
-}
-.edu_tabs_label p {
-  letter-spacing: 3px;
-  font-size: 11px;
-  color: #ffffff;
-  line-height: 70px;
-  margin: 0px 12px;
+    body {
+        background: #f8f8f8c4;
+    }
 
-}
-.edu_tabs_label_inner {
-    font-family: 'Sofia Pro', sans-serif;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    background: rgba(116,66,93,1);
-    background: -moz-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
-    background: -webkit-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
-    background: -o-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
-    background: -ms-linear-gradient(left, rgba(116,66,93,1) 0%, rgba(62,46,46,1) 100%);
-    background: linear-gradient(to right, rgb(139 32 37) 0%, rgb(112 43 43) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74425d', endColorstr='#3e2e2e', GradientType=1 );
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    position: absolute;
-    top: 0;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.edu_tabs_label:after {
-    content: '';
-    border: 10px solid #fff;
-    width: 80px;
-    height: 80px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    position: absolute;
-    top: -5px;
-    left: -4px;
-}
+    p {
+        font-size: 17px;
+        line-height: 31px;
+        text-align: justify;
+        color: #000;
+    }
+
+    a {
+        font-family: 'Sofia Pro', sans-serif;
+    }
+
+    h1 {
+        color: #150f49;
+    }
+
+    .footer {
+        background-color: #000;
+    }
+
+    .footer p {
+        color: #fff;
+        font-family: 'Sofia Pro', sans-serif;
+    }
+
+    .footer .btn.btn-link::before {
+        position: relative;
+        content: "";
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+        margin-right: 10px;
+    }
+
+    .edu_tabs_label {
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        background: #dad5d5;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 176px;
+        right: 40px;
+    }
+
+    .edu_tabs_label p {
+        letter-spacing: 3px;
+        font-size: 11px;
+        color: #ffffff;
+        line-height: 70px;
+        margin: 0px 12px;
+
+    }
+
+    .edu_tabs_label_inner {
+        font-family: 'Sofia Pro', sans-serif;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        background: rgba(116, 66, 93, 1);
+        background: -moz-linear-gradient(left, rgba(116, 66, 93, 1) 0%, rgba(62, 46, 46, 1) 100%);
+        background: -webkit-linear-gradient(left, rgba(116, 66, 93, 1) 0%, rgba(62, 46, 46, 1) 100%);
+        background: -o-linear-gradient(left, rgba(116, 66, 93, 1) 0%, rgba(62, 46, 46, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(116, 66, 93, 1) 0%, rgba(62, 46, 46, 1) 100%);
+        background: linear-gradient(to right, rgb(139 32 37) 0%, rgb(112 43 43) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74425d', endColorstr='#3e2e2e', GradientType=1);
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .edu_tabs_label:after {
+        content: '';
+        border: 10px solid #fff;
+        width: 80px;
+        height: 80px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        position: absolute;
+        top: -5px;
+        left: -4px;
+    }
+
+    .feature h5 {
+        font-family: 'Sofia Pro';
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .carousel-wrap {
+        margin: 90px auto;
+        padding: 0 5%;
+        width: 80%;
+        position: relative;
+    }
+
+    /* fix blank or flashing items on carousel */
+    .owl-carousel .item {
+        position: relative;
+        z-index: 100;
+    }
+
+    /* end fix */
+    .owl-nav>div {
+        margin-top: -26px;
+        position: absolute;
+        top: 50%;
+        color: #cdcbcd;
+    }
+
+    .owl-nav i {
+        font-size: 52px;
+    }
+
+    .owl-nav .owl-prev {
+        left: -30px;
+    }
+
+    .owl-nav .owl-next {
+        right: -30px;
+    }
+
+    .visitor {
+        border: 3px dotted rgba(255, 255, 255, 0.733);
+    }
+
+    .divider {
+        position: relative;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        height: 1px;
+    }
+
+    .div-transparent:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+    }
+
+    .div-dot:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -9px;
+        left: calc(50% - 9px);
+        width: 18px;
+        height: 18px;
+        background-color: goldenrod;
+        border: 1px solid rgb(48, 49, 51);
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+    }
 </style>
+
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+           
         </div>
     </div>
     <!-- Spinner End -->
@@ -145,7 +230,7 @@ h1{
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center">
                     <button class="btn btn-primary shadow" style="margin-right:10px">STUDENT LOGIN</button>
-                      <button class="btn btn-primary shadow ml-2">FRANCHISE LOGIN</button>
+                    <button class="btn btn-primary shadow ml-2">FRANCHISE LOGIN</button>
                 </div>
             </div>
         </div>
@@ -154,9 +239,10 @@ h1{
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0" style="font-family: 'Sofia Pro', sans-serif;">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0"
+        style="font-family: 'Sofia Pro', sans-serif;">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-2 px-lg-4">
-            <h2 class="m-0 text-primary">MDVTI</h2>
+            <h2 class="m-0 text-primary "><img src="img/logo1.png" width="100px"></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -189,16 +275,18 @@ h1{
     <div class="container-fluid p-0">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/banner-2.jpg" alt="">
+                <img class="img-fluid" src="img/banner-3.jpg" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
                     style="background: rgb(53 53 53 / 26%);">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To MDVTI India</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4" >9 Years of Excellence</h1>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To MDVTI India
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">9 Years of Excellence</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">No.1 Yoga Teacher Training Institute</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Register now</a>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Register
+                                    now</a>
 
                             </div>
                         </div>
@@ -206,37 +294,38 @@ h1{
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/banner-1.png" alt="">
+                <img class="img-fluid" src="img/banner-3.jpg" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(53, 53, 53, .7);">
+                    style="background: rgb(53 53 53 / 26%);">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To MDVTI India</h5>
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To MDVTI India
+                                </h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">9 Years of Excellence</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">No.1 Yoga Teacher Training Institute</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Register now</a>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Register
+                                    now</a>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/banner-1.png" alt="">
+                <img class="img-fluid" src="img/banner-3.jpg" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(53, 53, 53, .7);">
+                    style="background: rgb(53 53 53 / 26%);">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To WooDY</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Best Carpenter & Craftsman
-                                    Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor
-                                    at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
-                                    elitr.</p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read
-                                    More</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To MDVTI India
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">9 Years of Excellence</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">No.1 Yoga Teacher Training Institute</p>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Register
+                                    now</a>
+
                             </div>
                         </div>
                     </div>
@@ -246,30 +335,48 @@ h1{
     </div>
     <!-- Carousel End -->
 
+    <!--Announcment Start-->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-4 sm-4  text-center bg-success py-3">
+                <h3 class="text-white">Announcement</h3>
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+        </div>
+    </div>
+
+    <!--Announcment Start-->
 
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden px-lg-0">
-        <div class="container about px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden p-0">
+        <div class="about px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/w-h.jpg"
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/poster1.jpg"
                             style="object-fit: cover;" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s" style="background-image:url(img/bg.png)">
+                <div class="col-lg-6 about-text p-3 wow fadeIn" data-wow-delay="0.5s"
+                    style="background-image:url(img/bg.png)">
                     <div class="p-lg-5 pe-lg-0">
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">What is Yoga Teacher Training?
                             </h1>
                         </div>
-                        <p class="mb-4 pb-2">MDVTI INDIA has been a No. 1 Yoga Teacher Training institute for more than 9 years, growing well    rounded, competent, professional and highly skilled yoga teachers through our well structured courses.<br>
+                        <p class="mb-4 pb-2">MDVTI INDIA has been a No. 1 Yoga Teacher Training institute for more than
+                            9 years, growing well rounded, competent, professional and highly skilled yoga teachers
+                            through our well structured courses.<br>
 
-                            Our Yoga Teacher Training (YTT)  Course is focused on training budding teachers with detailed practice of Yogic Kriyas, Asanas, Pranayama & teaching methodologies of Yoga. The course integrates deeper concepts and techniques of Yoga like Anatomy, Physiology, Psychology, Meditation Techniques, Naturotherapy and the very essence of Yogic Philosophy into a holistic composite- thus enabling budding yoga teachers to impart knowledge of Yoga in its entirety and begin their career in the World of Yoga. </p>
+                            Our Yoga Teacher Training (YTT) Course is focused on training budding teachers with detailed
+                            practice of Yogic Kriyas, Asanas, Pranayama & teaching methodologies of Yoga. The course
+                            integrates deeper concepts and techniques of Yoga like Anatomy, Physiology, Psychology,
+                            Meditation Techniques, Naturotherapy and the very essence of Yogic Philosophy into a
+                            holistic composite- thus enabling budding yoga teachers to impart knowledge of Yoga in its
+                            entirety and begin their career in the World of Yoga. </p>
 
-                            <button class="btn btn-1 hover-filled-slide-right">
-        <span>hover me</span>
-      </button>
                     </div>
                 </div>
             </div>
@@ -279,70 +386,91 @@ h1{
 
     <!--Courses Start-->
     <div class="container ">
-     <div class="section-title text-center">
-      <h1 class="display-5 mb-5 mt-5">Our Courses</h1>
-      <p class="text-center">MDVTI INDIA runs several courses in India such as Fashion Designing, Dance, Yoga, IGD Bombay Art, Vocational & Computer Programs, Art & Drawing, Fire & Safety, and many more courses.</p>
-     </div>
-     <div class="owl-carousel owl-theme py-5">
-      <div class="item">
-        <div class="service-item p-3">
-            <div class="overflow-hidden">
-                <img class="img-fluid" src="img/course1.svg" alt="">
-            </div>
-            <div class="edu_tabs_label">
-             <p></p>
-                  <div class="edu_tabs_label_inner">
-                      <p>MDVTI</p>
-                  </div>
+        <div class="section-title text-center">
+            <h1 class="display-5 mb-5 mt-5">Our Courses</h1>
+            <p class="text-center">MDVTI INDIA runs several courses in India such as Fashion Designing, Dance, Yoga, IGD
+                Bombay Art, Vocational & Computer Programs, Art & Drawing, Fire & Safety, and many more courses.</p>
+        </div>
+        <div class="owl-carousel owl-theme py-5">
+            <div class="item">
+                <div class="service-item p-3">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/course1.svg" alt="">
+                    </div>
+                    <div class="edu_tabs_label">
+                        <p></p>
+                        <div class="edu_tabs_label_inner">
+                            <p>MDVTI</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white shadow">
+                        <h4 class="mb-3">Yoga -1</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
-            <div class="p-4 bg-white shadow">
-                <h4 class="mb-3">Yoga -1</h4>
-                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
             </div>
-        </div></div>
-      <div class="item">
-        <div class="service-item p-3">
-            <div class="overflow-hidden">
-                <img class="img-fluid" src="img/course1.svg" alt="">
-            </div>
-            <div class="edu_tabs_label">
-             <p></p>
-                  <div class="edu_tabs_label_inner">
-                      <p>MDVTI</p>
-                  </div>
+            <div class="item">
+                <div class="service-item p-3">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/course1.svg" alt="">
+                    </div>
+                    <div class="edu_tabs_label">
+                        <p></p>
+                        <div class="edu_tabs_label_inner">
+                            <p>MDVTI</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white shadow">
+                        <h4 class="mb-3">Yoga-2</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
-            <div class="p-4 bg-white shadow">
-                <h4 class="mb-3">Yoga-2</h4>
-                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+            </div>
+            <div class="item">
+                <div class="service-item p-3">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/course1.svg" alt="">
+                    </div>
+                    <div class="edu_tabs_label">
+                        <p></p>
+                        <div class="edu_tabs_label_inner">
+                            <p>MDVTI</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white shadow">
+                        <h4 class="mb-3">Yoga-3</h4>
+                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-  </div>
- </div>
-
-<!--MODAL START-->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
     </div>
-  </div>
-</div>
-<!--MODAL End-->
+
+    <!--MODAL START-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL End-->
 
 
 
@@ -355,63 +483,153 @@ h1{
                         <div class="section-title text-start">
                             <h1 class="display-5 mb-4">Why Choose Us</h1>
                         </div>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
-                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
-                            amet</p>
+
                         <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center bg-white" style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                            <div class="col-lg-4 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
                                         <i class="fa fa-video fa-2x text-success"></i>
                                     </div>
-                                    <div class="ms-4">
+                                    <div class="ms-2">
                                         <h5 class="mb-0">Recorded Lectures </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center bg-white" style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                            <div class="col-lg-8 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-book fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Detailed Study Material for Holistic Learning
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-id-badge fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Free Student Kit (ID card, Books, Tshirt)</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-pen fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Short notes & E-books</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-book-reader fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Student Care Portal</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
                                         <i class="fa fa-user-check fa-2x text-success"></i>
                                     </div>
-                                    <div class="ms-4">
+                                    <div class="ms-2">
                                         <h5 class="mb-0">Virtual Classroom</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center bg-white" style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                            <div class="col-lg-6 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
                                         <i class="fa fa-drafting-compass fa-2x text-success"></i>
                                     </div>
-                                    <div class="ms-4">
+                                    <div class="ms-2">
                                         <h5 class="mb-0">Live Doubt sessions
                                         </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center bg-white" style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                            <div class="col-lg-6 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center "
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-headphones fa-2x text-success"></i>
+                                        <i class="fa fa-brain fa-2x text-success"></i>
                                     </div>
-                                    <div class="ms-4">
+                                    <div class="ms-2">
                                         <h5 class="mb-0">Affordable Fee</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="d-flex align-items-center bg-white"  style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+
+                            <div class="col-lg-6 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-headphones fa-2x text-success"></i>
+                                        <i class="fa fa-video fa-2x text-success"></i>
                                     </div>
-                                    <div class="ms-4">
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Short notes & E-books</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sm-6">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-map-signs fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Lifetime Guidance from our Yoga Coach</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-chalkboard-teacher fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
                                         <h5 class="mb-0">Highly Trained & Certified Yoga Teachers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center bg-white"
+                                    style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fa fa-clipboard-check fa-2x text-success"></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="mb-0">Training for establishing your own Yoga Studio</h5>
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +638,8 @@ h1{
                 </div>
                 <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kvwtrk4n.json"  background="transparent"  speed="1"f ppp  loop autoplay></lottie-player>
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kvwtrk4n.json"
+                            background="transparent" speed="1" f ppp loop autoplay></lottie-player>
                     </div>
                 </div>
             </div>
@@ -437,11 +656,6 @@ h1{
             </div>
             <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                    <!--    <li class="mx-2" data-filter=".first">another</li>
-                        <li class="mx-2" data-filter=".second">another type</li>-->
-                    </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container">
@@ -489,55 +703,28 @@ h1{
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/g1.jpeg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/g1.jpeg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/g2.jpeg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/g1.jpeg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/g1.jpeg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/g1.jp2g"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/g4.jpeg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/g4.jpeg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
+
+        </div>
+        <div class="text-center mt-5">
+            <button class="btn btn-primary">View More</button>
         </div>
     </div>
-    <!-- Projects End -->
+    <!-- Gallery End -->
+
+    <!-- Video Gallery -->
+
+    <div class="container p-5 d-flex justify-content-center">
+        <iframe width="760" height="415" class="shadow rounded" style="overflow: hidden;"
+            src="https://www.youtube.com/embed/kwNKjgDrW8M" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <!-- Gallery End -->
+
+    <!---->
 
 
     <!-- Testimonial Start -->
@@ -584,34 +771,69 @@ h1{
         </div>
     </div>
     <!-- Testimonial End -->
-
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="owl-carousel govlogo-carousel">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/1.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/2.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/3.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/4.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/5.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/6.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/7.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light p-2 mx-auto mb-3 shadow" src="img/gov_logo/8.jpg"
+                        style="width:250px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Start -->
-    <div class="container-fluid text-light footer mt-5 pt-5 wow fadeIn footer" data-wow-delay="0.1s" style="background-image: url(img/bg.png); background-size:auto
-">
-        <div class="container py-5">
+    <!-- Footer Start -->
+    <div class="container-fluid text-light footer mt-5 pt-5 wow fadeIn footer" data-wow-delay="0.1s"
+        style="background-image: url(img/bg.png); background-size:auto">
+
+
+        <div class="container py-3">
             <div class="row g-5">
-                <div class="col-lg-5 col-md-6 ">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4/769 Vikas Nagar, Lucknow (U.P.)-226022</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Admission Enquiry : 1800-891-9232</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Franchise Enquiry : 1800-891-9232</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Any Other Enquiry : +91-9628865047</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mdvtiindia.org</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/mdvtiindia"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mdvtiindia"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mdvtiindia/"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-light mb-4 ">Login </h4>
+                    <a class="btn btn-link" href="">Student Login</a>
+                    <a class="btn btn-link" href="">Zonal Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Franchise Login</a>
+                    <a class="btn btn-link" href="">State Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Staff Login</a>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Important Links</h4>
-                    <a class="btn btn-link" href="">Link1</a>
-                    <a class="btn btn-link" href="">Link1</a>
-                    <a class="btn btn-link" href="">Link1</a>
-                    <a class="btn btn-link" href="">Link1</a>
-                    <a class="btn btn-link" href="">Link1</a>
+                    <a class="btn btn-link" href="">Result</a>
+                    <a class="btn btn-link" href="">Career in Yoga</a>
+                    <a class="btn btn-link" href="">Verify Institute</a>
+                    <a class="btn btn-link" href="">Rules and Regulation</a>
+                    <a class="btn btn-link" href="">Verify Certificate</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
@@ -621,10 +843,42 @@ h1{
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="mx-auto text-center">
+                        <img src="img/mdvtiindia_Logo.jpg" width="100px">
+                        <div class="mt-4 visitor">
+                            <h3 class="mt-2 text-white">Total visitors</h3>
+                            <h4 class="mt-2 text-white">987678</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider div-transparent div-dot"></div>
+        <div class="container ">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 ">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4/769 Vikas Nagar, Lucknow (U.P.)-226022
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Admission Enquiry : 1800-891-9232</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Franchise Enquiry : 1800-891-9232</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Any Other Enquiry : +91-9628865047</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mdvtiindia.org</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/mdvtiindia"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mdvtiindia"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mdvtiindia/"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
-            <div class="copyright">
+            <div class="copyright mt-5">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="border-bottom" href="#">MDVTI India</a>, All Right Reserved.
@@ -653,6 +907,7 @@ h1{
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
