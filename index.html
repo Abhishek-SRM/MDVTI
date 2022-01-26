@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -24,16 +26,20 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/pater.css" />
 </head>
 <style>
     body {
-        background: #f8f8f8c4;
+        background-color: rgba(238, 238, 238, 0.267);
+        background-image: url("img/bg.png");
     }
 
     p {
@@ -77,7 +83,7 @@
         -moz-border-radius: 100%;
         border-radius: 100%;
         position: absolute;
-        bottom: 176px;
+        bottom: 186px;
         right: 40px;
     }
 
@@ -146,6 +152,11 @@
         z-index: 100;
     }
 
+    .owl-nav {
+        justify-content: center;
+        display: flex;
+    }
+
     /* end fix */
     .owl-nav>div {
         margin-top: -26px;
@@ -155,7 +166,8 @@
     }
 
     .owl-nav i {
-        font-size: 52px;
+        padding: 10px;
+        font-size: 23px;
     }
 
     .owl-nav .owl-prev {
@@ -168,46 +180,24 @@
 
     .visitor {
         border: 3px dotted rgba(255, 255, 255, 0.733);
+        padding: 0 10px;
     }
 
-    .divider {
-        position: relative;
-        margin-top: 9px;
-        margin-bottom: 9px;
-        height: 1px;
-    }
-
-    .div-transparent:before {
-        content: "";
+    .Announcement .owl-nav {
+        font-size: 17px !important;
         position: absolute;
-        top: 0;
-        left: 5%;
-        right: 5%;
-        width: 90%;
-        height: 1px;
-        background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
-    }
-
-    .div-dot:after {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: -9px;
-        left: calc(50% - 9px);
-        width: 18px;
-        height: 18px;
-        background-color: goldenrod;
-        border: 1px solid rgb(48, 49, 51);
-        border-radius: 50%;
-        box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+        top: 20px;
+        right: 0;
+        transform: rotate(90deg);
     }
 </style>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-           
+
         </div>
     </div>
     <!-- Spinner End -->
@@ -227,10 +217,21 @@
                 </div>
             </div>
 
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
-                    <button class="btn btn-primary shadow" style="margin-right:10px">STUDENT LOGIN</button>
-                    <button class="btn btn-primary shadow ml-2">FRANCHISE LOGIN</button>
+            <div class="col-lg-5 d-inline-flex align-items-center justify-content-end">
+                <div class="dropdown btn btn-primary shadow" style="margin-right: 10px;">
+                    <a href="#" class="dropdown-toggle p-3" data-bs-toggle="dropdown">Login</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="studentlogin.html" class="dropdown-item">Student Login</a>
+                        <a href="franchise_login.html   " class="dropdown-item">Franchise Login</a>
+                    </div>
+                </div>
+                <div class="dropdown btn btn-primary shadow" style="margin-right: 10px;">
+                    <a href="#" class="dropdown-toggle p-3" data-bs-toggle="dropdown">Register</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="student_reg.html" class="dropdown-item">Student Registration</a>
+                        <a href="quote.html" class="dropdown-item">Franchise Registration</a>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,7 +243,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0"
         style="font-family: 'Sofia Pro', sans-serif;">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-2 px-lg-4">
-            <h2 class="m-0 text-primary "><img src="img/logo1.png" width="100px"></h2>
+            <h2 class="m-0 text-primary "><img src="img/logo1.png" width="128px"></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -259,20 +260,68 @@
                         <a href="testimonial.html" class="dropdown-item">Gallery</a>
                     </div>
                 </div>
-                <a href="service.html" class="nav-item nav-link">Franchisee</a>
-                <a href="project.html" class="nav-item nav-link">Blog</a>
-                <a href="project.html" class="nav-item nav-link">Shop</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Yoga Teacher Training </a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="course-desc.html" class="dropdown-item">PGDYT(Post Graduate Diploma in Yoga Therapy)</a>
+                        <a href="#" class="dropdown-item">DYT(Diploma in Yoga Teacher Training)</a>
+                        <a href="#" class="dropdown-item">CYT  (Certificate in Yoga Therapy)</a>
+                        <a href="#" class="dropdown-item">CYP  (Certificate in Yogasana & Pranayam)</a>
+                        <a href="#" class="dropdown-item">FCI  (Foundation Course in Yoga)</a>
+                    </div>
+                </div>
+                <a href="franchise.html" class="nav-item nav-link">Franchisee</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
                 <a href="contact.html" class="nav-item nav-link">Contact us </a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Online Admissions<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
+                    class="fa fa-shopping-cart ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0">
+    <div class="demo-2 loading">
+        <main>
+            <div class="slideshow">
+                <div class="slides">
+                    <div class="slide slide--current">
+                        <div class="slide__img" style="background-image: url(img/slder-2.png);"></div>
+                        <h2 class="slide__title">9 Years of Excellence</h2>
+                        <p class="slide__desc"> No.1 Yoga Teacher Training Institute</p>
+                        <a class="slide__link" href="#">Explore destinations</a>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(img/slider-2.png);"></div>
+                        <h2 class="slide__title">Unwind</h2>
+                        <p class="slide__desc">Untouched natural beauty makes this place unique.</p>
+                        <a class="slide__link" href="#">Adventure yourself</a>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(img/11.jpg);"></div>
+                        <h2 class="slide__title">Wallow</h2>
+                        <p class="slide__desc">Leave society behind and indulge yourself in tranquility.</p>
+                        <a class="slide__link" href="#">Discover calmness</a>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img" style="background-image: url(img/12.jpg);"></div>
+                        <h2 class="slide__title">Revel</h2>
+                        <p class="slide__desc">Discover great activities with breathtaking views.</p>
+                        <a class="slide__link" href="#">Find out more</a>
+                    </div>
+                </div>
+                <nav class="slidenav">
+                    <button class="slidenav__item slidenav__item--prev"><i
+                            class="fas fa-arrow-circle-left"></i></button>
+                    <span>/</span>
+                    <button class="slidenav__item slidenav__item--next"><i
+                            class="fas fa-arrow-circle-right"></i></button>
+                </nav>
+            </div>
+        </main>
+    </div>
+    <!-- <div class="container-fluid p-0">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/banner-3.jpg" alt="">
@@ -281,7 +330,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To MDVTI India
+                                <h5 class="text-white text-uppercase mb-3 animate__delay-2s">Welcome To MDVTI India
                                 </h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">9 Years of Excellence</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">No.1 Yoga Teacher Training Institute</p>
@@ -332,22 +381,38 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Carousel End -->
 
     <!--Announcment Start-->
-    <div class="container-fluid ">
+    <div class="container-fluid bg-white Announcement">
         <div class="row">
-            <div class="col-lg-4 sm-4  text-center bg-success py-3">
-                <h3 class="text-white">Announcement</h3>
+            <div class="col-lg-2 sm-2 text-center bg-primary"
+                style="clip-path: polygon(0% 0%, 85% -1%, 100% 50%, 85% 101%, 0% 100%);">
+                <h4 class="text-white" style="padding: 27px 0px;">Announcement</h4>
             </div>
-            <div class="col-lg-8">
-
+            <div class="col-lg-10 bg-white ">
+                <div class="container wow fadeInUp py-2" data-wow-delay="0.1s">
+                    <div class="owl-carousel ann-carousel">
+                        <div class="testimonial-item text-center">
+                            <p>When potential customers are researching you online, they're getting to know you by
+                                way of the</p>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <p>When potential customers are researching you online, they're getting to know you by
+                                way of the</p>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <p>When potential customers are researching you online, they're getting to know you by
+                                way of the</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--Announcment Start-->
+    <!--Announcment END-->
 
     <!-- About Start -->
     <div class="container-fluid bg-light overflow-hidden p-0">
@@ -393,7 +458,7 @@
         </div>
         <div class="owl-carousel owl-theme py-5">
             <div class="item">
-                <div class="service-item p-3">
+                <div class="service-item p-3 wow fadeInUp">
                     <div class="overflow-hidden">
                         <img class="img-fluid" src="img/course1.svg" alt="">
                     </div>
@@ -404,14 +469,24 @@
                         </div>
                     </div>
                     <div class="p-4 bg-white shadow">
-                        <h4 class="mb-3">Yoga -1</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <h5 class="mb-3">Post Graduation in Yoga Teacher</h5>
+                        <div class="d-flex justify-content-start pt-3 text-dark"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Eligibility :</span>
+                            <span>Graduation(Min 45% Marks)</span>
+                        </div>
+                        <div class="d-flex justify-content-start text-dark pb-4"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Duration :</span>
+                            <span>1 Year</span>
+
+                        </div>
                         <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="service-item p-3">
+                <div class="service-item p-3 wow fadeInUp">
                     <div class="overflow-hidden">
                         <img class="img-fluid" src="img/course1.svg" alt="">
                     </div>
@@ -422,14 +497,24 @@
                         </div>
                     </div>
                     <div class="p-4 bg-white shadow">
-                        <h4 class="mb-3">Yoga-2</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <h5 class="mb-3">Post Graduation in Yoga Teacher</h5>
+                        <div class="d-flex justify-content-start pt-3 text-dark"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Eligibility :</span>
+                            <span>Graduation(Min 45% Marks)</span>
+                        </div>
+                        <div class="d-flex justify-content-start text-dark pb-4"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Duration :</span>
+                            <span>1 Year</span>
+
+                        </div>
                         <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="service-item p-3">
+                <div class="service-item p-3 wow fadeInUp">
                     <div class="overflow-hidden">
                         <img class="img-fluid" src="img/course1.svg" alt="">
                     </div>
@@ -440,42 +525,60 @@
                         </div>
                     </div>
                     <div class="p-4 bg-white shadow">
-                        <h4 class="mb-3">Yoga-3</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        <h5 class="mb-3">Post Graduation in Yoga Teacher</h5>
+                        <div class="d-flex justify-content-start pt-3 text-dark"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Eligibility :</span>
+                            <span>Graduation(Min 45% Marks)</span>
+                        </div>
+                        <div class="d-flex justify-content-start text-dark pb-4"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Duration :</span>
+                            <span>1 Year</span>
+
+                        </div>
+                        <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="service-item p-3 wow fadeInUp">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/course1.svg" alt="">
+                    </div>
+                    <div class="edu_tabs_label">
+                        <p></p>
+                        <div class="edu_tabs_label_inner">
+                            <p>MDVTI</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white shadow">
+                        <h5 class="mb-3">Post Graduation in Yoga Teacher</h5>
+                        <div class="d-flex justify-content-start pt-3 text-dark"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Eligibility :</span>
+                            <span>Graduation(Min 45% Marks)</span>
+                        </div>
+                        <div class="d-flex justify-content-start text-dark pb-4"
+                            style="font-family: 'Sofia Pro', sans-serif;">
+                            <span class="text-primary" style="margin-right: 10px;">Duration :</span>
+                            <span>1 Year</span>
+
+                        </div>
                         <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!--MODAL START-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary shadow" style="margin-right:10px">View More</button>
         </div>
     </div>
-    <!--MODAL End-->
-
+    <!--Courses End-->
 
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid  overflow-hidden my-5 px-lg-0">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -485,24 +588,24 @@
                         </div>
 
                         <div class="row g-4">
-                            <div class="col-lg-4 sm-6">
+                            <div class="col-lg-4 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-video fa-2x text-success"></i>
+                                        <i class="fa fa-video fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Recorded Lectures </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 sm-6">
+                            <div class="col-lg-8 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-book fa-2x text-success"></i>
+                                        <i class="fa fa-book fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Detailed Study Material for Holistic Learning
@@ -510,36 +613,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-7 sm-6">
+                            <div class="col-lg-7 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-id-badge fa-2x text-success"></i>
+                                        <i class="fa fa-id-badge fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Free Student Kit (ID card, Books, Tshirt)</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 sm-6">
+                            <div class="col-lg-5 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-pen fa-2x text-success"></i>
+                                        <i class="fa fa-pen fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Short notes & E-books</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 sm-6">
+                            <div class="col-lg-6 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-book-reader fa-2x text-success"></i>
+                                        <i class="fa fa-book-reader fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Student Care Portal</h5>
@@ -547,24 +650,24 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 sm-6">
+                            <div class="col-lg-6 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-user-check fa-2x text-success"></i>
+                                        <i class="fa fa-user-check fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Virtual Classroom</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 sm-6">
+                            <div class="col-lg-6 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-drafting-compass fa-2x text-success"></i>
+                                        <i class="fa fa-drafting-compass fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Live Doubt sessions
@@ -572,12 +675,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 sm-6">
+                            <div class="col-lg-6 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center "
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-brain fa-2x text-success"></i>
+                                        <i class="fa fa-brain fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Affordable Fee</h5>
@@ -585,48 +688,48 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 sm-6">
+                            <div class="col-lg-6 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-video fa-2x text-success"></i>
+                                        <i class="fa fa-video fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Short notes & E-books</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 sm-6">
+                            <div class="col-lg-6 sm-6 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-map-signs fa-2x text-success"></i>
+                                        <i class="fa fa-map-signs fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Lifetime Guidance from our Yoga Coach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-12 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-chalkboard-teacher fa-2x text-success"></i>
+                                        <i class="fa fa-chalkboard-teacher fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Highly Trained & Certified Yoga Teachers</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 wow fadeInUp">
                                 <div class="d-flex align-items-center bg-white"
                                     style="border-radius: 6px ; box-shadow:0px 12px 24px -8px rgb(0 0 0 / 33%)">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center"
                                         style="width: 60px; height: 60px;">
-                                        <i class="fa fa-clipboard-check fa-2x text-success"></i>
+                                        <i class="fa fa-clipboard-check fa-2x text-primary"></i>
                                     </div>
                                     <div class="ms-2">
                                         <h5 class="mb-0">Training for establishing your own Yoga Studio</h5>
@@ -636,7 +739,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 pe-lg-0 wow fadeInRight" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kvwtrk4n.json"
                             background="transparent" speed="1" f ppp loop autoplay></lottie-player>
@@ -647,6 +750,15 @@
     </div>
     <!-- Feature End -->
 
+    <!-- Video Gallery -->
+
+    <div class="container p-5 d-flex justify-content-center wow fadeInUp">
+        <iframe width="760" height="415" class="shadow rounded" style="overflow: hidden;"
+            src="https://www.youtube.com/embed/kwNKjgDrW8M?autoplay=1" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <!-- Gallery End -->
 
     <!-- Gallery Start -->
     <div class="container-xxl py-5">
@@ -713,19 +825,6 @@
         </div>
     </div>
     <!-- Gallery End -->
-
-    <!-- Video Gallery -->
-
-    <div class="container p-5 d-flex justify-content-center">
-        <iframe width="760" height="415" class="shadow rounded" style="overflow: hidden;"
-            src="https://www.youtube.com/embed/kwNKjgDrW8M" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-    <!-- Gallery End -->
-
-    <!---->
-
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -811,51 +910,11 @@
     </div>
 
     <!-- Footer Start -->
-    <!-- Footer Start -->
     <div class="container-fluid text-light footer mt-5 pt-5 wow fadeIn footer" data-wow-delay="0.1s"
         style="background-image: url(img/bg.png); background-size:auto">
 
 
         <div class="container py-3">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6 ">
-                    <h4 class="text-light mb-4 ">Login </h4>
-                    <a class="btn btn-link" href="">Student Login</a>
-                    <a class="btn btn-link" href="">Zonal Co-ordinator Login</a>
-                    <a class="btn btn-link" href="">Co-ordinator Login</a>
-                    <a class="btn btn-link" href="">Franchise Login</a>
-                    <a class="btn btn-link" href="">State Co-ordinator Login</a>
-                    <a class="btn btn-link" href="">Staff Login</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Important Links</h4>
-                    <a class="btn btn-link" href="">Result</a>
-                    <a class="btn btn-link" href="">Career in Yoga</a>
-                    <a class="btn btn-link" href="">Verify Institute</a>
-                    <a class="btn btn-link" href="">Rules and Regulation</a>
-                    <a class="btn btn-link" href="">Verify Certificate</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="mx-auto text-center">
-                        <img src="img/mdvtiindia_Logo.jpg" width="100px">
-                        <div class="mt-4 visitor">
-                            <h3 class="mt-2 text-white">Total visitors</h3>
-                            <h4 class="mt-2 text-white">987678</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="divider div-transparent div-dot"></div>
-        <div class="container ">
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 ">
                     <h4 class="text-light mb-4">Address</h4>
@@ -875,6 +934,41 @@
                                 class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+                <!-- <div class="col-lg-3 col-md-6 ">
+                    
+                    <h4 class="text-light mb-4 ">Login </h4>
+                    <a class="btn btn-link" href="">Student Login</a>
+                    <a class="btn btn-link" href="">Zonal Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Franchise Login</a>
+                    <a class="btn btn-link" href="">State Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Staff Login</a>
+                </div> -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Important Links</h4>
+                    <a class="btn btn-link" href="">Result</a>
+                    <a class="btn btn-link" href="">Career in Yoga</a>
+                    <a class="btn btn-link" href="">Verify Institute</a>
+                    <a class="btn btn-link" href="">Rules and Regulation</a>
+                    <a class="btn btn-link" href="">Verify Certificate</a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="mx-auto text-center">
+                        <img src="img/footer-logo.png" width="100px">
+                        <div class="mt-4 visitor">
+                            <h3 class="mt-2 text-white">Total visitors</h3>
+                            <h4 class="mt-2 text-white">987678</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -891,7 +985,6 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -907,10 +1000,23 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/demo2.js"></script>
 
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 2000 && $("#exampleModal").attr("displayed") === "false") {
+                $('#exampleModal').modal('show');
+                $("#exampleModal").attr("displayed", "true");
+            }
+        });
+    </script>
 </body>
 
 </html>

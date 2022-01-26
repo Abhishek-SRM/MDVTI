@@ -49,8 +49,7 @@
     // Header carousel
     $(".header-carousel").owlCarousel({
         animateOut: 'slideOutLeft',
-        autoplay: false,
-        smartSpeed: 1500,
+        smartSpeed: 500,
         items: 1,
         dots: true,
         loop: true,
@@ -60,6 +59,32 @@
             "<i class='fa fa-caret-right'></i>"
           ],
     });
+    $(".franchise").owlCarousel({
+        animateOut: 'slideOutLeft',
+        smartSpeed: 500,
+        items: 3,
+        dots: true,
+        loop: true,
+        nav : true,
+        navText: [
+            "<i class='fa fa-caret-left'></i>",
+            "<i class='fa fa-caret-right'></i>"
+          ],
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            700: {
+              items: 2
+            },
+            1000: {
+              items: 3
+            }
+          }
+    });
 
 
     // Testimonials carousel
@@ -68,8 +93,8 @@
         margin: 10,
         nav: true,
         navText: [
-          "<i class='fa fa-caret-left'></i>",
-          "<i class='fa fa-caret-right'></i>"
+          "<i class='fas fa-arrow-circle-left'></i>",
+          "<i class='fas fa-arrow-circle-right'></i>"
         ],
         autoplay: true,
         autoplayHoverPause: true,
@@ -88,33 +113,63 @@
           }
         }
     });
-
+    $('.ann-carousel').owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        center: true,
+        dots: true,
+        loop: true,
+        nav : true,
+          navText : [
+              '<i class="bi bi-arrow-left"></i>',
+              '<i class="bi bi-arrow-right"></i>'
+          ],
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              720:{
+                items:1
+              },
+              1000:{    
+                  items:1
+              }
+          }
+      })
+    // Portfolio isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
     $('.owl-carousel').owlCarousel({
-      autoplay: true,
-      smartSpeed: 1000,
-      center: true,
-      dots: true,
-      loop: true,
-      nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive:{
-            0:{
+        autoplay: true,
+        smartSpeed: 1000,
+        center: true,
+        dots: true,
+        loop: true,
+        nav : true,
+          navText : [
+              '<i class="bi bi-arrow-left"></i>',
+              '<i class="bi bi-arrow-right"></i>'
+          ],
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              720:{
                 items:1
-            },
-            600:{
-                items:1
-            },
-            720:{
-              items:1
-            },
-            1000:{
-                items:3
-            }
-        }
-    })
+              },
+              1000:{
+                  items:3
+              }
+          }
+      })
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',

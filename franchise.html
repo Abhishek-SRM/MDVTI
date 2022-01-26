@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MDVTII</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Sofia Pro', sans-serif;
+        background-image: url('img/bg.png');
+
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 31px;
+        text-align: justify;
+        color: #000;
+    }
+
+    a {
+        font-family: 'Sofia Pro', sans-serif;
+    }
+
+    h1 {
+        color: #150f49;
+    }
+
+    .footer {
+        background-color: #000;
+    }
+
+    .footer p {
+        color: #fff;
+        font-family: 'Sofia Pro', sans-serif;
+    }
+
+    .footer .btn.btn-link::before {
+        position: relative;
+        content: "";
+        font-weight: 900;
+        margin-right: 10px;
+    }
+
+    .visitor {
+        border: 3px dotted rgba(255, 255, 255, 0.733);
+    }
+
+    .divider {
+        position: relative;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        height: 1px;
+    }
+
+    .div-transparent:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        height: 1px;
+        background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+    }
+
+    .div-dot:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -9px;
+        left: calc(50% - 9px);
+        width: 18px;
+        height: 18px;
+        background-color: goldenrod;
+        border: 1px solid rgb(48, 49, 51);
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+    }
+
+    .contact-form {
+        background-image: url('img/franchise/banner-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .certi {
+        font-size: 24px;
+    }
+
+    .pr3-get-right .pr3-get-vector-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+    }
+
+    .pr3-get-right {
+        position: relative;
+    }
+
+    .pr3-about-section {
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .bg_banner {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.616);
+        background-size: 100% 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .pr20-project-content .pr20-project-column .pr20-headline h2 {
+        display: inline-block;
+        color: #8B2025;
+    }
+
+
+
+    @media (max-width: 991.98px) {
+        .pr20-business-section {
+            padding-top: 100px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <section class="bg_banner">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-sm-6 col-6 logo"><img src="img/logo1.png" width="150px" class="img-fluid"></div>
+
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-6 col-12 maincol text-center">
+                    <div class="vbsimg">
+                        <img src="img/franchise/Untitled design (1).png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12 maincol text-center">
+                    <div class="bnrtxt">
+                        <img src="https://images.badabusiness.com/bb-website-prod/assets/cpmaster/images/bnr_txt.png"
+                            class="img-fluid mt-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sb-about" class="pr3-about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pr3-get-right wow fadeInRight" data-wow-delay="0.2s"
+                        style="visibility: visible;animation-delay: 0.2s;">
+                        <div class="pr3-get-circle">
+                            <img src="img/franchise/circle.svg" alt="">
+                        </div>
+                        <div class="pr3-get-vector-img">
+                            <img src="img/franchise/circle-inner.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 container">
+                    <div class="pr3-about-right ">
+                        <div class="pr3-title-area wow fadeInDown " style="visibility: visible;">
+                            <div class="pr3-headline">
+                                <h1 class="">Why Join Yoga Franchise</h1>
+                            </div>
+                            <div class="pr3-pera-txt">
+                                <p>As health and wellness take center stage in the post-COVID world, Yoga has emerged as
+                                    a popular lifestyle choice. People are increasingly turned to practising yoga to
+                                    stay healthy, stress-free and avoid negative thinking and beliefs. There is a strong
+                                    demand for Yoga professionals and trainers to help people make the most of this
+                                    ancient Indian science. With time everything has changed- job market, choices of
+                                    people, lifestyle, and the ultimate desire to find inner peace. The surge in these
+                                    sectors has pushed the demand for trained professionals to lead people on their
+                                    spiritual journeys. </p>
+                                <a href="" class="btn btn-primary px-3 py-2">Join now<i
+                                        class="bi bi-arrow-right ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Counter Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="container">
+                    <div class="section-title text-start">
+                        <h1 class="display-5 mb-4">Our National Presence</h1>
+                    </div>
+                    <div class="row g-4 mb-4 pb-2">
+                        <div class="col-md-3 sm-12 mr-3 wow fadeIn bg-white shadow py-3" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-users fa-2x text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <div class="d-flex justify-content-start">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">753</h2>
+                                        <h3 class="text-primary">+</h3>
+                                    </div>
+
+                                    <p class="fw-medium mb-0">Study Centers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 wow fadeIn bg-white shadow py-3" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-check fa-2x text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <div class="d-flex justify-content-start">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">35000</h2>
+                                        <h3 class="text-primary">+</h3>
+                                    </div>
+
+                                    <p class="fw-medium mb-0">STrained Yogis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sm-12 align-self-center wow fadeIn" data-wow-delay="0.5s">
+                            <a href="" class="btn btn-primary py-5 px-5">Join the mission to improve global
+                                well-being</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Counter end-->
+
+    <!--Benefits As Our Franchise Partner START-->
+    <div class="container">
+        <h1> Your Benefits As Our Franchise Partner-
+        </h1>
+        <ol class="olcards py-5 ">
+            <li>
+                <div class="content">
+                    <div class="text">Dedicated Customer Support Manager
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Complete guidance & solutions to establish, operate and manage the Franchisee
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Customer Complaint Management System (CMS)
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Extensive Marketing Support
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Personalized Website
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Dynamic Franchisee Login Panel
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Regular Business & Marketing Training Sessions
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Social Media Management Training
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Post Tracking System
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content ">
+                    <div class="text">Accounts Management
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Reasonable Franchise Fee
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Assistance in Recruitment & Training of Staff
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Free Franchise Kit ( Prospectus, Handbill, Books, Tshirts, Admission Form, Diary,
+                        Calendar, Affiliation Letter, Acknowledgement, Bhagwad Geeta)
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Virtual Classroom
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Recorded Lectures & Live Doubt Session for Students
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="text">Detailed Study Material for Students for Holistic Learning
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <!--Benefits As Our Franchise Partner END-->
+
+    <!--Our Top Franchise Partners Start-->
+    <section class="py-3">
+        <div class="container">
+            <h1 class="text-center">Our Top Franchise Partners</h1>
+            <div class="row">
+                <div class="owl-carousel franchise">
+                    <div class="item">
+                        <div class="p-3">
+                            <div class="card mb-3 shadow">
+                                <img class="card-img-top"
+                                    src="https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto,w_1125/media_venue/eeikts44iwxjkwbehxu7.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title bg-primary p-3 text-white"><i class="fas fa-hotel mx-3"></i>MDVTI
+                                        INDIA</h4>
+                                    <hr>
+                                    <div class="d-flex justify-content-between ">
+                                        <p class="card-text text-primary">
+                                            City : Lucknow
+                                        </p>
+                                        <p class="card-text text-primary">
+                                            State : Uttar Pradesh
+                                        </p>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Our Top Franchise Partners End-->
+    
+    <section class="aplit-gt-area py-5 shadow">
+        <div class="container">
+            <div class="aplit-gt-wrapper" data-background="assets/img/it-img-33/git-bg.jpg" style="background-image: url(&quot;assets/img/it-img-33/git-bg.jpg&quot;);">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="aplit-gt-left">
+                            <span class="subtitle">MDVTI INDIA</span>
+                            <div class="aplit-headline">
+                                <h3>We are building the largest community of wellness providers on earth, be a part of it.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="aplit-gt-right ">
+                            <a href="#" class="bg-white px-5 py-3 shadow">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light footer  pt-5 wow fadeIn footer" data-wow-delay="0.1s"
+        style="background-image: url(img/bg.png); background-size:auto">
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-light mb-4 ">Login </h4>
+                    <a class="btn btn-link" href="">Student Login</a>
+                    <a class="btn btn-link" href="">Zonal Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Franchise Login</a>
+                    <a class="btn btn-link" href="">State Co-ordinator Login</a>
+                    <a class="btn btn-link" href="">Staff Login</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Important Links</h4>
+                    <a class="btn btn-link" href="">Result</a>
+                    <a class="btn btn-link" href="">Career in Yoga</a>
+                    <a class="btn btn-link" href="">Verify Institute</a>
+                    <a class="btn btn-link" href="">Rules and Regulation</a>
+                    <a class="btn btn-link" href="">Verify Certificate</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="mx-auto text-center">
+                        <img src="img/mdvtiindia_Logo.jpg" width="100px">
+                        <div class="mt-4 visitor">
+                            <h3 class="mt-2 text-white">Total visitors</h3>
+                            <h4 class="mt-2 text-white">987678</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider div-transparent div-dot"></div>
+        <div class="container ">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 ">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4/769 Vikas Nagar, Lucknow (U.P.)-226022
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Admission Enquiry : 1800-891-9232</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Franchise Enquiry : 1800-891-9232</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Any Other Enquiry : +91-9628865047</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mdvtiindia.org</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/mdvtiindia"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/mdvtiindia"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mdvtiindia/"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright mt-5">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">MDVTI India</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
