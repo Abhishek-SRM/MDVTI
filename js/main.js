@@ -48,7 +48,6 @@
 
     // Header carousel
     $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutLeft',
         smartSpeed: 500,
         items: 1,
         dots: true,
