@@ -43,7 +43,7 @@
     p {
         font-size: 17px;
         line-height: 31px;
-        text-align: justify;
+        font-family: 'Sofia Pro', sans-serif;
         color: #000;
     }
 
@@ -56,7 +56,7 @@
     }
 
     .footer {
-        background-color: #000;
+        background-color: #150f49;
     }
 
     .footer p {
@@ -137,43 +137,9 @@
         font-size: 15px;
     }
 
-    .carousel-wrap {
-        margin: 90px auto;
-        padding: 0 5%;
-        width: 80%;
-        position: relative;
-    }
-
-    /* fix blank or flashing items on carousel */
-    .owl-carousel .item {
-        position: relative;
-        z-index: 100;
-    }
-
     .owl-nav {
         justify-content: center;
         display: flex;
-    }
-
-    /* end fix */
-    .owl-nav>div {
-        margin-top: -26px;
-        position: absolute;
-        top: 50%;
-        color: #cdcbcd;
-    }
-
-    .owl-nav i {
-        padding: 10px;
-        font-size: 23px;
-    }
-
-    .owl-nav .owl-prev {
-        left: -30px;
-    }
-
-    .owl-nav .owl-next {
-        right: -30px;
     }
 
     .visitor {
@@ -282,7 +248,8 @@
     <header>
         <div class="owl-carousel header-carousel">
             <div class="item">
-                <img src="https://images.unsplash.com/photo-1624704200567-760cf26ae848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="images not found">
+                <img src="https://images.unsplash.com/photo-1624704200567-760cf26ae848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="images not found">
                 <div class="cover">
                     <div class="container">
                         <div class="header-content">
@@ -320,22 +287,26 @@
                                             <div class="row g-4 mb-4 pt-5">
                                                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                                     <div class="d-flex align-items-center bg-white p-3">
-                                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center shadow bg-white" style="width: 60px; height: 60px;">
+                                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center shadow bg-white"
+                                                            style="width: 60px; height: 60px;">
                                                             <i class="fa fa-users fa-2x text-primary"></i>
                                                         </div>
                                                         <div class="ms-3">
-                                                            <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                                            <h2 class="text-primary mb-1" data-toggle="counter-up">1234
+                                                            </h2>
                                                             <p class="fw-medium mb-0">No. of Franchisees</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                                     <div class="d-flex align-items-center bg-white p-3">
-                                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center shadow bg-white" style="width: 60px; height: 60px;">
+                                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center shadow bg-white"
+                                                            style="width: 60px; height: 60px;">
                                                             <i class="fa fa-check fa-2x text-primary"></i>
                                                         </div>
                                                         <div class="ms-3">
-                                                            <h2 class="text-primary mb-1" data-toggle="counter-up">1234</h2>
+                                                            <h2 class="text-primary mb-1" data-toggle="counter-up">1234
+                                                            </h2>
                                                             <p class="fw-medium mb-0">No. of Students</p>
                                                         </div>
                                                     </div>
@@ -343,7 +314,7 @@
                                             </div>
                                         </div>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
@@ -366,7 +337,7 @@
             </div>
         </div>
     </header>
- 
+
 
     <!--Announcment Start-->
     <div class="container-fluid bg-white Announcement">
@@ -435,7 +406,7 @@
     <!--Courses Start-->
     <div class="container ">
         <div class="section-title text-center">
-            <h1 class="display-5 mb-5 mt-5">Our Courses</h1>    
+            <h1 class="display-5 mb-5 mt-5">Our Courses</h1>
         </div>
         <div class="owl-carousel owl-theme py-5">
             <div class="item">
@@ -761,14 +732,38 @@
     <!-- Feature End -->
 
     <!-- Video Gallery -->
-
     <div class="container p-5 d-flex justify-content-center wow fadeInUp">
         <iframe width="760" height="415" class="shadow rounded" style="overflow: hidden;"
             src="https://www.youtube.com/embed/kwNKjgDrW8M?autoplay=1" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
-    <!-- Gallery End -->
+    <!-- video Gallery End -->
+    <div class="container">
+        <div class="section-title text-center">
+            <h1 class="display-5 mb-5">Our Toppers</h1>
+        </div>
+        <div class="row">
+            <div class="owl-carousel toppers">
+                <div class="item">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <p><img class=" img-fluid"
+                                    src="https://image.shutterstock.com/image-photo/close-portrait-smiling-handsome-man-260nw-1011569245.jpg"
+                                    alt="card image"></p>
+                            <h4 class="card-title">Vikas Kumar</h4>
+                            <div class="text-primary">
+                                <p class="card-text"><i class="fas fa-map-marker-alt text-primary px-2"></i>Maharstra
+                                </p>
+                                <hr>
+                                <p class="bg-primary text-white py-1" style="font-size: 15px;">Marks Obtained : 98%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Gallery Start -->
     <div class="container-xxl py-5">
@@ -847,8 +842,10 @@
                     <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
                         style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed.
+                            Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo
+                            sea
                             clita.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
@@ -858,8 +855,10 @@
                     <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg"
                         style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed.
+                            Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo
+                            sea
                             clita.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
@@ -869,8 +868,10 @@
                     <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg"
                         style="width: 90px; height: 90px;">
                     <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed.
+                            Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo
+                            sea
                             clita.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
@@ -928,7 +929,8 @@
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 ">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4/769 Vikas Nagar, Lucknow (U.P.)-226022
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4/769 Vikas Nagar, Lucknow
+                        (U.P.)-226022
                     </p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Admission Enquiry : 1800-891-9232</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>For Franchise Enquiry : 1800-891-9232</p>
@@ -1011,7 +1013,7 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-  
+
 
 
     <!-- Template Javascript -->

@@ -112,6 +112,34 @@
           }
         }
     });
+
+    // Our toppers Carousel
+    $(".toppers").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [
+        "<i class='fas fa-arrow-circle-left'></i>",
+        "<i class='fas fa-arrow-circle-right'></i>"
+      ],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 3
+        },
+        700: {
+          items: 3
+        },
+        1000: {
+          items: 6
+        }
+      }
+  });
+
     $('.ann-carousel').owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
