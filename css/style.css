@@ -826,7 +826,7 @@ header .item {
     height: 70vh;
     position: relative;
   }
-  header .item img {
+  header .item .header-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -968,5 +968,92 @@ header .item {
   header:hover .owl-next {
     right: 0px;
     opacity: 1;
+  }
+  .pr-mark-feature-section {
+    z-index: 1;
+    overflow: hidden;
+    padding: 120px 0px 50px;
+  }
+  .pr-mark-feature-section .pr-mark-feature-shape {
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .pr-mark-feature-innerbox {
+    margin-left: 43px;
+    background-color: #fff;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+    padding: 30px 25px 30px 60px;
+    -webkit-box-shadow: 6.891px 24.032px 80px 0px rgba(189, 189, 189, 0.3);
+    box-shadow: 6.891px 24.032px 80px 0px rgba(189, 189, 189, 0.3);
+  }
+  .pr-mark-feature-innerbox .pr-mark-feature-inner-icon {
+    top: 50%;
+    left: -42px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #2899ff 0%, #6dcbff 100%, #ffc587 100%);
+    -webkit-box-shadow: 0px 14px 40px 0px rgba(58, 171, 255, 0.25);
+    box-shadow: 0px 14px 40px 0px rgba(58, 171, 255, 0.25);
+  }
+  .pr-mark-feature-innerbox .pr-mark-feature-inner-icon i {
+    color: #fff;
+    line-height: 0.7;
+    font-size: 45px;
+  }
+  .pr-mark-feature-innerbox .pr-mark-feature-inner-text p {
+    color: #1f1f1f;
+    font-size: 18px;
+    margin-top: 15px;
+    word-spacing: 0;
+    text-align:left
+  }
+  .pr-mark-feature-innerbox:hover {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  
+  .pr-mark-feature-content {
+    padding-top: 50px;
+  }
+  .pr-mark-feature-content .col-lg-4:nth-child(2) .pr-mark-feature-inner-icon {
+    background: linear-gradient(-49deg, #fd4485 0%, #ffa38d 100%);
+    -webkit-box-shadow: 0px 15px 60px 0px rgba(253, 89, 135, 0.3);
+    box-shadow: 0px 15px 60px 0px rgba(253, 89, 135, 0.3);
+  }
+  .pr-mark-feature-content .col-lg-4:nth-child(3) .pr-mark-feature-inner-icon {
+    background: linear-gradient(135deg, #ff5728 0%, #ffc587 100%, #ffd328 100%);
+    -webkit-box-shadow: 0px 15px 60px 0px rgba(255, 87, 40, 0.3);
+    box-shadow: 0px 15px 60px 0px rgba(255, 87, 40, 0.3);
+  }
+  
+  .pr-mark-about-section {
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .pr-mark-about-section .pr-mark-about-shape {
+    top: 40px;
+    left: -100px;
+    -webkit-animation: Pr_mark_animation_3 12s infinite linear alternate;
+    animation: Pr_mark_animation_3 12s infinite linear alternate;
+  }
+  .pr-mark-about-section .pr-mark-about-cricle-shape {
+    right: 0;
+    bottom: 0;
+    -webkit-animation: Pr_mark_animation_4 12s infinite linear alternate;
+    animation: Pr_mark_animation_4 12s infinite linear alternate;
+  }
+  
+  .pr-mark-about-text .pr-mark-section-title {
+    padding-bottom: 25px;
+  }
+  .pr-mark-about-text .pr-mark-section-title p {
+    padding-bottom: 20px;
   }
   
