@@ -6,7 +6,9 @@
     --light: #F5F5F5;
     --dark: #353535;
 }
-
+.dropdown-item {
+    font-size: 15px;
+}
 .dropdown-menu {
     z-index: 10000;
 }
@@ -1056,4 +1058,79 @@ header .item {
   .pr-mark-about-text .pr-mark-section-title p {
     padding-bottom: 20px;
   }
+  .mdvti-service-section {
+    padding: 115px 0px;
+    background-color: #ebf2f6;
+  }
+  .mdvti-service-section .mdvti-service-content {
+    padding-top: 55px;
+  }
   
+  .mdvti-service-innerbox {
+    padding: 20px 20px 25px;
+    position: relative;
+    background-color: #fff;
+    transition: 0.3s all ease-in-out;
+  }
+  .mdvti-service-innerbox:before {
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0%;
+    content: "";
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #230455;
+    transition: 0.5s all ease-in-out;
+  }
+  .mdvti-service-innerbox .mdvti-service-icon svg {
+    height: 57px;
+  }
+  .mdvti-service-innerbox .mdvti-service-text h3 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  .mdvti-service-innerbox .mdvti-service-text p {
+    color: #666666;
+    padding-bottom: 20px;
+  }
+  .mdvti-service-innerbox .mdvti-service-text .cyb-feature-more {
+    width: 100px;
+    height: 38px;
+    display: block;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 700;
+    font-family: "Poppins";
+    border: 2px solid #8B2025;
+    transition: 0.3s all ease-in-out;
+  }
+  .mdvti-service-innerbox .mdvti-service-text .cyb-feature-more i {
+    font-size: 14px;
+  }
+  .mdvti-service-innerbox .mdvti-service-text .cyb-feature-more:hover {
+    border: 2px solid #8B2025;
+    background-color: #8B2025;
+    color: #fff;
+  }
+  .mdvti-service-innerbox:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 25px 40px 0px rgba(22, 0, 37, 0.15);
+  }
+  .mdvti-service-innerbox:hover:before {
+    width: 100%;
+  }
+  .footer {
+    background-color: #12274A;
+}
+
+.footer p {
+    color: #fff;
+    font-family: 'Sofia Pro', sans-serif;
+}
+.visitor {
+    border: 3px dotted rgba(255, 255, 255, 0.733);
+}

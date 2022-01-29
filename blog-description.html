@@ -124,8 +124,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-
     <!-- Topbar Start -->
     <div class="container-fluid bg-light p-0" style="font-family: 'Sofia Pro', sans-serif;">
         <div class="row gx-0 d-none d-lg-flex">
@@ -140,10 +138,21 @@
                 </div>
             </div>
 
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
-                    <button class="btn btn-primary shadow" style="margin-right:10px">STUDENT LOGIN</button>
-                    <button class="btn btn-primary shadow ml-2">FRANCHISE LOGIN</button>
+            <div class="col-lg-5 d-inline-flex align-items-center justify-content-end">
+                <div class="dropdown btn btn-primary shadow" style="margin-right: 10px;">
+                    <a href="#" class="dropdown-toggle p-3 text-white" data-bs-toggle="dropdown">Login</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="studentlogin.html" class="dropdown-item">Student Login</a>
+                        <a href="franchise_login.html   " class="dropdown-item">Franchise Login</a>
+                    </div>
+                </div>
+                <div class="dropdown btn btn-primary shadow" style="margin-right: 10px;">
+                    <a href="#" class="dropdown-toggle p-3 text-white" data-bs-toggle="dropdown">Register</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="student-reg.html" class="dropdown-item">Student Registration</a>
+                        <a href="registerfranchise.html" class="dropdown-item">Franchise Registration</a>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,10 +161,10 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow"
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0"
         style="font-family: 'Sofia Pro', sans-serif;">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-2 px-lg-4">
-            <h2 class="m-0 text-primary "><img src="img/logo1.png" width="100px"></h2>
+            <h2 class="m-0 text-primary "><img src="img/logo1.png" width="128px"></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -172,13 +181,23 @@
                         <a href="testimonial.html" class="dropdown-item">Gallery</a>
                     </div>
                 </div>
-                <a href="service.html" class="nav-item nav-link">Franchisee</a>
-                <a href="project.html" class="nav-item nav-link">Blog</a>
-                <a href="project.html" class="nav-item nav-link">Shop</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Yoga Teacher Training </a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="course-desc.html" class="dropdown-item">Post Graduate Diploma in Yoga
+                            Therapy</a>
+                        <a href="#" class="dropdown-item">Diploma in Yoga Teacher Training</a>
+                        <a href="#" class="dropdown-item">Certificate in Yoga Therapy</a>
+                        <a href="#" class="dropdown-item">Certificate in Yogasana & Pranayam</a>
+                        <a href="#" class="dropdown-item">Foundation Course in Yoga</a>
+                    </div>
+                </div>
+                <a href="franchise.html" class="nav-item nav-link">Franchisee</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
                 <a href="contact.html" class="nav-item nav-link">Contact us </a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Online Admissions<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
+                    class="fa fa-shopping-cart ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->

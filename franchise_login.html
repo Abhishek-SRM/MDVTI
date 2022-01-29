@@ -35,7 +35,7 @@
 </head>
 <style>
      body {
-        background-color: rgba(238, 238, 238, 0.267);
+        font-family: 'Sofia Pro', sans-serif;
         background-image: url("img/bg.png");
     }
     p {
@@ -101,88 +101,7 @@
     border-radius: 50%;
     box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
-.right-form{
-    background-color: #ffffff;
-    height: auto;
-    
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 20px 30px;
-    border-radius: 10px;
-}
 
-input,
-textarea {
-  background: none;
-  color: #000000;
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid #8b2025;
-}
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
-input:focus~label,
-    input:valid~label,
-    textarea:focus~label,
-    textarea:valid~label {
-        top: -14px;
-        font-size: 12px;
-        color: #8b2025;
-    }
-
-    input:focus~.bar:before,
-    textarea:focus~.bar:before {
-        width: 100%;
-    }
-
-    input[type=password] {
-        letter-spacing: 0.3em;
-    }
-
-    label {
-        color: #000000;
-        font-size: 16px;
-        font-weight: normal;
-        position: absolute;
-        pointer-events: none;
-        left: 5px;
-        top: 10px;
-        transition: 300ms ease all;
-    }
-
-    .bar {
-        position: relative;
-        display: block;
-        width: 100%;
-    }
-
-    .bar:before {
-        content: "";
-        height: 1.3px;
-        width: 0;
-        bottom: 0px;
-        position: absolute;
-        background: #2e2e2e;
-        transition: 300ms ease all;
-        left: 0%;
-    }
-
-.btn-box {
-  text-align: center;
-  margin: 50px 0;
-}
-.group {
-  position: relative;
-  margin: 45px 0;
-}
 .verifyotp form input {
         display: inline-block;
         width: 50px;
@@ -218,131 +137,131 @@ input:focus~label,
                 </div>
             </div>
 
-            <div class="col-lg-5 d-inline-flex align-items-center justify-content-end ">
+            <div class="col-lg-5 d-inline-flex align-items-center justify-content-end">
                 <div class="dropdown btn btn-primary shadow" style="margin-right: 10px;">
                     <a href="#" class="dropdown-toggle p-3 text-white" data-bs-toggle="dropdown">Login</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="studentlogin.html" class="dropdown-item" >Student Login</a>
-                        <a href="franchise_login.html" class="dropdown-item">Franchise Login</a>
+                        <a href="studentlogin.html" class="dropdown-item">Student Login</a>
+                        <a href="franchise_login.html   " class="dropdown-item">Franchise Login</a>
                     </div>
                 </div>
                 <div class="dropdown btn btn-primary shadow" style="margin-right: 10px;">
                     <a href="#" class="dropdown-toggle p-3 text-white" data-bs-toggle="dropdown">Register</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="student_reg.html" class="dropdown-item">Student Registration</a>
-                        <a href="quote.html" class="dropdown-item">Franchise Registration</a>
+                        <a href="student-reg.html" class="dropdown-item">Student Registration</a>
+                        <a href="registerfranchise.html" class="dropdown-item">Franchise Registration</a>
 
                     </div>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0"
-    style="font-family: 'Sofia Pro', sans-serif;">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-2 px-lg-4">
-        <h2 class="m-0 text-primary "><img src="img/logo1.png" width="128px"></h2>
-    </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-                <div class="dropdown-menu fade-up m-0">
-                    <a href="feature.html" class="dropdown-item">MDVTI INDIA</a>
-                    <a href="quote.html" class="dropdown-item">Management Message</a>
-                    <a href="team.html" class="dropdown-item">Meet the team</a>
-                    <a href="testimonial.html" class="dropdown-item">Gallery</a>
+        style="font-family: 'Sofia Pro', sans-serif;">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-2 px-lg-4">
+            <h2 class="m-0 text-primary "><img src="img/logo1.png" width="128px"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="feature.html" class="dropdown-item">MDVTI INDIA</a>
+                        <a href="quote.html" class="dropdown-item">Management Message</a>
+                        <a href="team.html" class="dropdown-item">Meet the team</a>
+                        <a href="testimonial.html" class="dropdown-item">Gallery</a>
+                    </div>
                 </div>
-            </div>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Yoga Teacher Training </a>
-                <div class="dropdown-menu fade-up m-0">
-                    <a href="course-desc.html" class="dropdown-item">PGDYT(Post Graduate Diploma in Yoga Therapy)</a>
-                    <a href="#" class="dropdown-item">DYT(Diploma in Yoga Teacher Training)</a>
-                    <a href="#" class="dropdown-item">CYT  (Certificate in Yoga Therapy)</a>
-                    <a href="#" class="dropdown-item">CYP  (Certificate in Yogasana & Pranayam)</a>
-                    <a href="#" class="dropdown-item">FCI  (Foundation Course in Yoga)</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Yoga Teacher Training </a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="course-desc.html" class="dropdown-item">Post Graduate Diploma in Yoga
+                            Therapy</a>
+                        <a href="#" class="dropdown-item">Diploma in Yoga Teacher Training</a>
+                        <a href="#" class="dropdown-item">Certificate in Yoga Therapy</a>
+                        <a href="#" class="dropdown-item">Certificate in Yogasana & Pranayam</a>
+                        <a href="#" class="dropdown-item">Foundation Course in Yoga</a>
+                    </div>
                 </div>
+                <a href="franchise.html" class="nav-item nav-link">Franchisee</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="contact.html" class="nav-item nav-link">Contact us </a>
             </div>
-            <a href="franchise.html" class="nav-item nav-link">Franchisee</a>
-            <a href="blog.html" class="nav-item nav-link">Blog</a>
-            <a href="contact.html" class="nav-item nav-link">Contact us </a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
+                    class="fa fa-shopping-cart ms-3"></i></a>
         </div>
-        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
-                class="fa fa-shopping-cart ms-3"></i></a>
-    </div>
-</nav>
+    </nav>
     <!-- Navbar End -->
     <!--Login form Start-->
 
-    <div class="login-form container-fluid">
-        <div class="row">
-            <div class="col-xl-6 col-lg-5 ">
-                <div class="d-flex justify-content-center">
-                    <img src="img/franchiseimg.png" width="80%">
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 align-self-center">
-                <div class="right-form shadow">
-                    <h3>Franchise Login</h3>
-                    <form>
-                        <div class="group">
-                            <input type="text" required="required" /><span class="highlight"></span><span
-                                class="bar"></span>
-                            <label>Enter Center code</label>
-                        </div>
-                        <div class="group">
-                            <input type="text" required="required" /><span class="highlight"></span><span
-                                class="bar"></span>
-                            <label>Enter Mobile No. or Email-Id</label>
-                        </div>
-                        <div> <button type="submit" class="btn btn-primary mt-0" id="otp-btn">Get OTP</button></div>
-                        <div class="mt-4">
-                            <a href="">New to MDVTII ? Register now</a>
-                        </div>
-                    </form>
-                </div>
-                <div class="container otp-section">
-                    <div class="row justify-content-center verifyotp">
-                        <div class="text-center">
-                            <div class="row">
-                                <div class="col-sm-12 mt-5 bg-white p-4 shadow">
-                                    <div class="title">
-                                        Verify OTP
-                                        <br>
-                                        <p> Please enter OTP sent to your mobile no.</p>
-                                    </div>
-                                    <form action="" class="mt-5">
-                                        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)'
-                                            maxlength=1>
-                                        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)'
-                                            maxlength=1>
-                                        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)'
-                                            maxlength=1>
-                                        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)'
-                                            maxlength=1>
-                                    </form>
-                                    <hr class="mt-4">
-                                    <div class="d-flex justify-content-center">
-                                        <button class='btn btn-primary btn-block' id="cancel-otp">Cancel</button>
-                                        <button class='btn btn-primary btn-block'>Verify</button>
-                                    </div>
+    <div class="container col-xl-10 col-xxl-10">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-6 text-center">
+             <img src="img/franchiseimg.png" style="width: 69vh;">
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light right-form">
+                <h3 class="mb-4">Franchise Login</h3>
+              <div class="form-floating mb-3 ">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> Enter Center Number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Mobile Number or Email Address</label>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <a class="w-100 btn btn-lg btn-primary" id="otp-btn">Get OTP</a>
+              <hr class="my-4">
+              <a href="franchise_login.html">Not MDVTII Franchise Member ? Register Now</a>
+            </form>
+            <div class="container otp-section">
+                <div class="row justify-content-center verifyotp">
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col-sm-12 mt-5 bg-white p-4 shadow">
+                                <div class="title">
+                                    Verify OTP
+                                    <br>
+                                    <p> Please enter OTP sent to your mobile no.</p>
+                                </div>
+                                <form action="" class="mt-5">
+                                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)'
+                                        maxlength=1>
+                                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)'
+                                        maxlength=1>
+                                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)'
+                                        maxlength=1>
+                                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)'
+                                        maxlength=1>
+                                </form>
+                                <hr class="mt-4">
+                               
+                                <div class="d-flex justify-content-center">
+                                    <button class='btn btn-primary btn-block' id="cancel-otp">Cancel</button>
+                                    <button class='btn btn-primary btn-block'>Verify</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-           
+          </div>
+         
         </div>
-    </div>
+      </div>
 
     <!-- Footer Start -->
     <div class="container-fluid text-light footer mt-5 pt-5 wow fadeIn footer" data-wow-delay="0.1s"
